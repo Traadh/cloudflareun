@@ -1,20 +1,19 @@
 I gather the magic keys required to enter a Cloudflare protected site. 
 
-For the Responsibility part: Three sentences about my main responsibilities - what I do, what I know.
+Responsibilities:
+Give me a url door to knock on,  and I'll return a factory for generating ZnClients configured with the magic keys.
 
-Give me a url door to knock on,  and I'll give you back an instance of myself for generating ZnClients configured with the magic keys.
-
-Collaborators
+Collaborators:
 cloudscraper  - a nodejs library. Its where the magic happens to navigate Cloudflare and output the final web page to stdout.
 OSProcess - Used to shell out to nodejs 
 
-Class-side Public API and Key Messages
+Class-side Public API and Key Messages:
 knockURL: aHostUrlString -- the url used for initial access
 
-Instance-side Public API and Key Messages
+Instance-side Public API and Key Messages:
 client - a factory method returning a new ZnClient configured with the magic keys.
 
-Example (
+Example 
 |client response|
 client := (CloudflareUn knockUrl: 'http://bittrex.com') client.  
 client url: 'https://bittrex.com/home/markets'.
