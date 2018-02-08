@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "BenComan 2/8/2018 10:57",
+	"super" : "Object",
+	"category" : "CloudflareUn",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cfduid",
+		"cf_clearance",
+		"userAgent",
+		"domain"
+	],
+	"name" : "CloudflareUn",
+	"type" : "normal"
+}
