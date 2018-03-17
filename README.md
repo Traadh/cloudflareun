@@ -4,7 +4,7 @@ Help Pharo pass through to Cloudflare guarded website.
 Background discussed at [blog.openinworld.com](http://blog.openinworld.com/2018/02/pharo-v-cloudflare "Pharo v. Cloudflare")
 
 ### Responsibilities  
-I gather the magic keys required to enter a Cloudflare guarded site. Give me a url door to knock on, and I'll return a factory for generating ZnClients configured with the magic keys.
+I gather the magic keys required to enter a Cloudflare guarded site. Give me a URL to knock on, and I'll return a factory for generating ZnClients configured with the magic keys.
 
 ### Collaborators   
 __cloudscraper__ is a nodejs library. Its where the magic happens to obtain the Cloudflare keys.  
