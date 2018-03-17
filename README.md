@@ -1,6 +1,6 @@
 # CloudflareUn
 
-Pharo library to unwrap Cloudflare. 
+Help Pharo pass through to Cloudflare guarded website.
 
 ### Responsibilities  
 I gather the magic keys required to enter a Cloudflare guarded site. Give me a url door to knock on, and I'll return a factory for generating ZnClients configured with the magic keys.
