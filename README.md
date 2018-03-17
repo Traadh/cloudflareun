@@ -1,7 +1,7 @@
 # CloudflareUn
 
 Help Pharo pass through to Cloudflare guarded website.   
-Background discussed [here](http://blog.openinworld.com/2018/02/pharo-v-cloudflare "Pharo v. Cloudflare")
+Background discussed at [blog.openinworld.com](http://blog.openinworld.com/2018/02/pharo-v-cloudflare "Pharo v. Cloudflare")
 
 ### Responsibilities  
 I gather the magic keys required to enter a Cloudflare guarded site. Give me a url door to knock on, and I'll return a factory for generating ZnClients configured with the magic keys.
@@ -22,9 +22,8 @@ __client__ returns a new ZnClient configured with the magic keys.
 client := (CloudflareUn knockUrl: 'http://bittrex.com') client.
 client url: 'https://bittrex.com/home/markets'. 
 (response := client get) inspect. 
-"Note: Cloudflare enforces a five second delay, so expect UI to block for 5 to 10 seconds"
+"Note: Cloudflare enforces a five second delay, so unless you fork, expect UI to block for 5 to 10 seconds"
 ```
-For a greater understanding of how Cloudflare works, see <a href="http://blog.openinworld.com/2018/02/pharo-v-cloudflare/">this post</a>.
 
 ### Installation 
 On Ubuntu 16.04...  
