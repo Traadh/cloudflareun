@@ -1,6 +1,7 @@
 # CloudflareUn
 
-Help Pharo pass through to Cloudflare guarded website.
+Help Pharo pass through to Cloudflare guarded website.   
+Background discussed [here](http://blog.openinworld.com/2018/02/pharo-v-cloudflare "Pharo v. Cloudflare")
 
 ### Responsibilities  
 I gather the magic keys required to enter a Cloudflare guarded site. Give me a url door to knock on, and I'll return a factory for generating ZnClients configured with the magic keys.
